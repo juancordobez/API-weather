@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 // Route dom
 import { Route } from 'react-router-dom';
 
+// sweetalert2
+import Swal from 'sweetalert2';
+
 // Components
 import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
@@ -50,7 +53,7 @@ function App() {
           else setCities(oldCities => [...oldCities, ciudad]);
 
         } else {
-          alert("Ciudad no encontrada");
+          Swal.fire('Ciudad no encontrada.')
         }
       });
   }
