@@ -6,6 +6,7 @@ export default function SearchBar({onSearch}) {
     <form onSubmit={(e) => {
       e.preventDefault();
       onSearch(city);
+      setCity(e.target.value = '')
     }}>
       <input
         type="text"
