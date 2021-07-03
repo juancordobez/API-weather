@@ -1,11 +1,11 @@
 import React from 'react';
-import './Cards.css';
+import s from './cards.module.css'
 
 import Card from './Card.jsx';
 
 export default function Cards({cities, onClose}) {
   return (
-    <div className='cards'>
+    <div className={s.divCars}>
       {cities.map(c => <Card
           key={c.id}
           max={c.max}

@@ -1,8 +1,63 @@
-.App {
+
+*{
+  font-family:  Arial, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.5px;
+}
+nav{
+  background-color: #3012f8;
+  margin: 0px 0px 20px 0px;
+  padding: 10px;
+  box-shadow: 0px 0px 8px #060128;
+
+  
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+
+
+}
+.flex{
+  flex: 1 1 auto;
+}
+.nowrap{
+  flex-wrap: nowrap;
+
+}
+.wrap{
+  flex-wrap: wrap;
+
+}
+.column{
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.row {
+#root{
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
+  text-align: center;
+
+  padding: 0px;
+
+}
+body{
+  margin: 0px;
+  background-color: #03a9f4;
+}
+
+#logoHenry {
+  margin-right: 20px;
+}
+
+.titulo{
+  font-style: italic;
+  text-shadow: 0px 0px 3px #060128;
+  box-shadow: 0px 1px 2px #060128;
 }

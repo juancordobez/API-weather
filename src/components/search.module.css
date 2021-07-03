@@ -1,36 +1,31 @@
 
 
-.divForm{
-    display: block;
+.form{
+    flex: 1 1 auto;
+    margin: 10px 20px 10px 20px ;
 
-    width: 90%;
-
-    margin: 5%;
-    padding: 2%;
 }
 
 .btn{
-    /* display: block; */
-
-    /* font-size: small; */
-    color: #343a40;
+    color: #3012f8;
     font-weight: bold;
 
     background-color: white;
 
     border: none;
+    border-left: 1px solid #3012f8;
     border-radius:  0px 5px 5px 0px;
 
     padding: 5px 8px 5px 8px;
 
-    box-shadow: 0px 0px 0px #ccc inset, 0px 0px 3px #ccc;
+    box-shadow: 0px 0px 0px #060128 inset, 5px 5px 5px #060128;
 
     transition: all 500ms;
 
 }
 
 .btn:hover{
-    box-shadow: 0px 0px 3px #ccc inset, 0px 0px 3px #ccc;
+    box-shadow: 0px 0px 3px #060128 inset, 0px 0px 5px #060128;
 }
 .btn:focus{
     border: none;
@@ -44,25 +39,26 @@
 
 .input{
     background-color: white;
-
+    color: grey;
+    
     border: none;
     border-radius: 5px 0px 0px 5px;
 
     padding: 5px 8px 5px 8px;
 
-    box-shadow: 0px 0px 0px #ccc inset, 0px 0px 3px #ccc;
+    box-shadow: 0px 0px 0px #060128 inset, 5px 5px 5px #060128;
 
     transition: all 400ms;
 }
 
 .input:hover{
-    box-shadow: 0px 0px 3px #ccc inset, 0px 0px 3px #ccc;
+    box-shadow: 0px 0px 3px #060128 inset, 0px 0px 5px #060128;
 }
 
 .input:focus{
     border: none;
     outline: none;
-    box-shadow: 0px 0px 3px #ccc inset, 0px 0px 3px #ccc;
+    box-shadow: 0px 0px 3px #060128 inset, 0px 0px 3px #060128;
 }
 .input:focus-visible{
     outline: none;

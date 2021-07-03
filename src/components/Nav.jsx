@@ -10,19 +10,24 @@ import { About } from './About.jsx';
 
 // Styles
 import Logo from '../img/logoHenry.png';
-import './Nav.css';
+
+
 
 
 function Nav({onSearch}) {
   return (
-    <nav className="navbar navbar-dark bg-dark">
+    <nav className="row wrap">
 
       <Link to='/'>
-        <span className="navbar-brand">
-          <img id="logoHenry" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
-          Clima App
-        </span>
+        <div className="row flex">
+          <img id="logoHenry" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="logo de soy henry" />
+        </div>
       </Link>
+      <Link to='/'>
+          <span className="flex">Clima App</span>
+
+      </Link>
+
         <SearchBar
           onSearch={onSearch}
         />
